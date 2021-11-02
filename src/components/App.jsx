@@ -1,31 +1,26 @@
 import React, { useState } from "react";
 
 function App() {
-  let [count, setCount] = useState(0);
+  let [double, setDoubling] = useState(1);
 
-  function increase() {
-    setCount(count++);
+  function subtract() {
+    setDoubling(double--);
   }
 
-  function decrease() {
-    setCount(count--);
+  function multi() {
+    setDoubling(double * 2);
   }
 
-  function divide() {
-    setCount(count / 2);
-  }
-
-  function multiply() {
-    setCount(count * 2);
+  function add() {
+    setDoubling(double++);
   }
 
   return (
     <div>
-      <h1>{count}</h1>
-      <button onClick={increase}>+</button>
-      <button onClick={decrease}>-</button>
-      <button onClick={divide}>/</button>
-      <button onClick={multiply}>x</button>
+      <h1>{double}</h1>
+      <button onClick={subtract}>-</button>
+      <button onClick={multi}>x</button>
+      <button onClick={add}>+</button>
     </div>
   );
 }
