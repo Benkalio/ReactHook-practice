@@ -6,9 +6,13 @@ function App() {
     changeCount(count--);
   }
 
-  function add() {}
+  function add() {
+    changeCount(count++);
+  }
 
-  function multiply() {}
+  function multiply() {
+    changeCount(multiply * 2);
+  }
 
   function remainder() {}
 
