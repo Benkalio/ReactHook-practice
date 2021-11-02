@@ -11,12 +11,16 @@ function App() {
   }
 
   function multiply() {
-    changeCount(multiply * 2);
+    changeCount(count * 2);
   }
 
-  function remainder() {}
+  function remainder() {
+    changeCount(count % 3);
+  }
 
-  function divide() {}
+  function divide() {
+    changeCount(count / 2);
+  }
 
   return (
     <div>
