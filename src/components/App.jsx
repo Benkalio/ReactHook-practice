@@ -11,13 +11,21 @@ function App() {
     setCount(count--);
   }
 
+  function divide() {
+    setCount(count / 2);
+  }
+
+  function multiply() {
+    setCount(count * 2);
+  }
+
   return (
     <div>
       <h1>{count}</h1>
       <button onClick={increase}>+</button>
       <button onClick={decrease}>-</button>
-      <button>/</button>
-      <button>x</button>
+      <button onClick={divide}>/</button>
+      <button onClick={multiply}>x</button>
     </div>
   );
 }
