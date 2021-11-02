@@ -7,17 +7,14 @@ function App() {
     setCount(count++);
   }
 
-  function decrease() {
-    setCount(count--);
-  }
-
   return (
-    <div className="container">
+    <div>
       <h1>{count}</h1>
       <button onClick={increase}>+</button>
-      <button onClick={decrease}>-</button>
+      <button>-</button>
+      <button>/</button>
+      <button>x</button>
     </div>
   );
 }
-
 export default App;
