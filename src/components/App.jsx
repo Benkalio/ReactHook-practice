@@ -1,26 +1,27 @@
 import React, { useState } from "react";
-
 function App() {
-  let [double, setDoubling] = useState(1);
+  let [count, changeCount] = useState(1);
 
-  function subtract() {
-    setDoubling(double--);
+  function sub() {
+    changeCount(count--);
   }
 
-  function multi() {
-    setDoubling(double * 2);
-  }
+  function add() {}
 
-  function add() {
-    setDoubling(double++);
-  }
+  function multiply() {}
+
+  function remainder() {}
+
+  function divide() {}
 
   return (
     <div>
-      <h1>{double}</h1>
-      <button onClick={subtract}>-</button>
-      <button onClick={multi}>x</button>
+      <h1>{count}</h1>
+      <button onClick={sub}>-</button>
       <button onClick={add}>+</button>
+      <button onClick={multiply}>x</button>
+      <button onClick={remainder}>%</button>
+      <button onClick={divide}>/</button>
     </div>
   );
 }
