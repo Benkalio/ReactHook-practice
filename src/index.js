@@ -5,7 +5,7 @@ let count = 0;
 
 function increase() {
   count++;
-  console.log("clickeddd!");
+  console.log(count);
 }
 
 ReactDOM.render(
