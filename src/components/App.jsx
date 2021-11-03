@@ -3,7 +3,9 @@ import React, { useState } from "react";
 function App() {
   let [count, setCount] = useState(2);
 
-  function increase() {}
+  function increase() {
+    setCount(count++);
+  }
 
   return (
     <div>
