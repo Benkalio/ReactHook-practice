@@ -7,12 +7,16 @@ function App() {
     setCount(count++);
   }
 
+  function decrease() {
+    setCount(count--);
+  }
+
   return (
     <div>
       <h1>{count}</h1>
-      <button onClick="increase">+</button>
-      <button onClick="decrease">-</button>
-      <button onClick="times">X</button>
+      <button onClick={increase}>+</button>
+      <button onClick={decrease}>-</button>
+      <button onClick={times}>X</button>
     </div>
   );
 }
