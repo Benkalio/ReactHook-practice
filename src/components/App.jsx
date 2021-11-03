@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 function App() {
+  let [count, setCount] = useState(2);
+
   return (
     <div>
       <h1>{}</h1>
