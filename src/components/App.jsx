@@ -11,6 +11,8 @@ function App() {
     setCount(count--);
   }
 
+  function times() {}
+
   return (
     <div>
       <h1>{count}</h1>
