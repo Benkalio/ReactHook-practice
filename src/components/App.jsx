@@ -11,7 +11,9 @@ function App() {
     setCount(count--);
   }
 
-  function times() {}
+  function times() {
+    setCount(count * 3);
+  }
 
   return (
     <div>
