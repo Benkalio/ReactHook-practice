@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
+  let [counter, changeCounter] = useState(10);
   return (
     <div>
       <h1>{}</h1>
