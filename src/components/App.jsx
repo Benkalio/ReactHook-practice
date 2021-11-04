@@ -2,6 +2,18 @@ import React, { useState } from "react";
 
 function App() {
   let [counter, changeCounter] = useState(10);
+
+  function increase() {
+    changeCounter(counter++);
+  }
+
+  function decrease() {
+    changeCounter(counter--);
+  }
+
+  function multiply() {
+    changeCounter(counter * 3);
+  }
   return (
     <div>
       <h1>{}</h1>
