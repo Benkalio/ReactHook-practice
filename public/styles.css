@@ -11,6 +11,10 @@ body {
 h1 {
   font-size: 100px;
 }
+h2 {
+  font-size: 80px;
+  color: #fc0000;
+}
 
 .container {
   margin: 60% auto;
