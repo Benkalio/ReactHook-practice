@@ -16,7 +16,7 @@ function App() {
   }
   return (
     <div>
-      <h1>{}</h1>
+      <h1>{counter}</h1>
       <h2>
         Implementing React useState method to change the state of this App
       </h2>
