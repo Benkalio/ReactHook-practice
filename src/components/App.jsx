@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
 function App() {
-  let [count, setCount, deCount] = useState(12, 24);
+  let [count, setCount] = useState(12, 24);
 
   function increase() {
     setCount(count++);
-    deCount(count * 3);
   }
 
   function decrease() {
@@ -15,7 +14,9 @@ function App() {
   return (
     <div>
       <h1>{count}</h1>
-      <h2>{deCount}</h2>
+
+      <button onClick={increase}>+</button>
+      <button onClick={decrease}>-</button>
     </div>
   );
 }
