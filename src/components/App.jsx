@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
-  let [count, setCount, deCount] = useState(12);
+  let [count, setCount, deCount] = useState(12, 24);
 
   function increase() {
     setCount(count++);
